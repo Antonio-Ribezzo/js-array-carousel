@@ -22,10 +22,56 @@ document.getElementById("slider").innerHTML += `
     </div>
 `;
 
-for(let i = 1; i < 5; i++){
+for(let i = 1; i < 4; i++){
     document.getElementById("slider").innerHTML +=`
     <div class="item">
         ${imgArray[i]}
     </div>
     `
 }
+
+document.getElementById("slider").innerHTML += `
+    <div class="item last">
+        ${imgArray[4]}
+    </div>
+`;
+
+const next = document.querySelector('.next')
+const prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    // seleziono div con active, prima immagine
+    let activeItem = document.querySelector('.item.active')
+    console.log(activeItem)
+
+    let itemToActive = activeItem.nextElementSibling
+    console.log(itemToActive)
+
+    if(activeItem.classList.contains('last')){
+        itemToActive = document.querySelector('.item.first')
+    }
+
+    //rimozione classe active
+    activeItem.classList.remove('active')
+    //aggiunta della classe active all'elemento successivo
+    itemToActive.classList.add('active')
+})
+
+prev.addEventListener('click', function(){
+    // seleziono div con active, prima immagine
+    let activeItem = document.querySelector('.item.active')
+    console.log(activeItem)
+
+    let itemToActive = activeItem.previousElementSibling
+    console.log(itemToActive)
+
+    if(activeItem.classList.contains('first')){
+        itemToActive = document.querySelector('.item.last')
+    }
+
+    //rimozione classe active
+    activeItem.classList.remove('active')
+    //aggiunta della classe active all'elemento successivo
+    itemToActive.classList.add('active')
+})
+
