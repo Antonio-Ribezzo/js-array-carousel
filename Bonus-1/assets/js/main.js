@@ -1,6 +1,9 @@
 /*
 CONSEGNA:
 Dato un array contenente una lista di cinque immagini, creare un carosello come nello screenshot allegato.
+
+BONUS-1
+    • Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all’immagine precedente, dovrà comparire l’ultima immagine dell’array e viceversa.
 */
 
 // creo l'array di immagini
