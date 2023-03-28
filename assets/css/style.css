@@ -9,4 +9,10 @@
     cursor: pointer;
 }
 
+.item.active{
+    display: block;
+}
 
+.item{
+    display: none;
+}
