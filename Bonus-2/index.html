@@ -13,40 +13,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="vh-100 container-md p-5 d-flex justify-content-between align-items-center position-relative">
-        <!-- immagini grandi -->
-        <div>
-            <div class="container-slider active first bg-img-01">
-            </div>
-            <div class="container-slider bg-img-02">
-            </div>
-            <div class="container-slider bg-img-03">
-            </div>
-            <div class="container-slider bg-img-04">
-            </div>
-            <div class="container-slider last bg-img-05">
-            </div>
-        </div>
-        <!-- slider a destra -->
-        <div id="dx-slider" class="position-absolute">
-            <div id="slider" class="d-flex flex-column justify-content-between align-items-center position-relative">
-                <div class="img-slider active first">
-                    <img class="img-fluid" src="./assets/img/01.webp" alt="">
+    <div id="container-main" class="container">
+        <div class="row p-5 align-items-center">
+            <!-- immagini grandi -->
+            <div class="col-9">
+                <div class="container-slider active first bg-img-01">
                 </div>
-                <div class="img-slider">
-                    <img class="img-fluid" src="./assets/img/02.webp" alt="">
+                <div class="container-slider bg-img-02">
                 </div>
-                <div class="img-slider">
-                    <img class="img-fluid" src="./assets/img/03.webp" alt="">
+                <div class="container-slider bg-img-03">
                 </div>
-                <div class="img-slider">
-                    <img class="img-fluid" src="./assets/img/04.webp" alt="">
+                <div class="container-slider bg-img-04">
                 </div>
-                <div class="img-slider last">
-                    <img class="img-fluid" src="./assets/img/05.webp" alt="">
+                <div class="container-slider last bg-img-05">
                 </div>
-                <i class="prev position-absolute fa-solid fa-chevron-up mt-3"></i>
-                <i class="next position-absolute fa-solid fa-chevron-down bottom-0 mb-3"></i>
+            </div>
+            <!-- slider a destra -->
+            <div id="dx-slider" class="col-3">
+                <div id="slider" class="d-flex flex-column justify-content-between align-items-center position-relative">
+                    <div class="img-slider active first">
+                        <img class="img-fluid" src="./assets/img/01.webp" alt="">
+                    </div>
+                    <div class="img-slider">
+                        <img class="img-fluid" src="./assets/img/02.webp" alt="">
+                    </div>
+                    <div class="img-slider">
+                        <img class="img-fluid" src="./assets/img/03.webp" alt="">
+                    </div>
+                    <div class="img-slider">
+                        <img class="img-fluid" src="./assets/img/04.webp" alt="">
+                    </div>
+                    <div class="img-slider last">
+                        <img class="img-fluid" src="./assets/img/05.webp" alt="">
+                    </div>
+                    <i class="prev position-absolute fa-solid fa-chevron-up mt-3"></i>
+                    <i class="next position-absolute fa-solid fa-chevron-down bottom-0 mb-3"></i>
+                </div>
             </div>
         </div>
     </div>

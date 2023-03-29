@@ -2,9 +2,21 @@
     border: 2px solid red;
 }
 
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 109, 64);
+}
+
+#container-main{
+    background-color: bisque;
+    border-radius: 5rem;
+}
+
 .container-slider{
-    height: 30rem;
-    width: 80rem;
+    height: 20rem;
 }
 
 .bg-img-01{
@@ -28,7 +40,7 @@
 .bg-img-04{
     background-image: url('../img/04.webp');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:contain;
 }
 
 .bg-img-05{
@@ -47,11 +59,11 @@
 #slider>.img-slider{
     flex-basis: calc(100% / 5);
     width: 100px;
-    opacity: 0.5;
+    filter: brightness(0.5);
 }
 
 #slider>.img-slider.active{
-    opacity: 1;
+    filter: brightness(1);
     border: 4px solid greenyellow;
 }
 
@@ -64,7 +76,7 @@
 }
 
 #dx-slider{
-    right: 2rem;
+    /* right: 2rem; */
 }
 
 
