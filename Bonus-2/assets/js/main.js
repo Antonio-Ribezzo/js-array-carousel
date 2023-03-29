@@ -9,7 +9,7 @@ BONUS-2:
 /* Bisognerà rimuovere o aggiungere delle classi in maniera opportuna andando a targhettizzare alcuni elementi già presenti nel DOM, tutto attraverso il click sulle frecce.
 */
 
-// Targhettizzo le frecce
+// Seleziono le frecce
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 

@@ -44,7 +44,6 @@
     cursor: pointer;
 }
 
-
 #slider>.img-slider{
     flex-basis: calc(100% / 5);
     width: 100px;
@@ -65,7 +64,7 @@
 }
 
 #dx-slider{
-    right: 4rem;
+    right: 2rem;
 }
 
 
